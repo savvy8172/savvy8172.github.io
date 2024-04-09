@@ -1,0 +1,24 @@
+* {color:hotpink}
+h1 {color: rgb(143, 198, 198)}
+li {color:orange}
+my-colours {
+    color: green;
+}
+#venue {
+    color:red
+}
+
+[data-email= email] {
+    color: purple;
+}
+p1 {color: yellowgreen;}
+ul > li strong{
+    color: black 
+}
+.prosto-one-regular {
+    font-family: "Prosto One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem
+  }
+  
