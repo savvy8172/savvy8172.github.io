@@ -18,9 +18,13 @@ h1 {font: jersey 10;
     /* color: #e5e5cb; */
     color: #fa8518;
     font-size: 3rem;
+
   }
   h2 {font-size: 1rem;
 align-self:flex-end;
-justify-content:space-evenly;
-}
-  
+justify-content: left;}
+  h3 { font-size: 1rem;
+align-self: flex-end;
+justify-content: b;}
+
+div {align-self:flex-end;}
