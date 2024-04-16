@@ -20,11 +20,17 @@ h1 {font: jersey 10;
     font-size: 3rem;
 
   }
-  h2 {font-size: 1rem;
+  a {font-size: 1rem;
 align-self:flex-end;
-justify-content: left;}
-  h3 { font-size: 1rem;
-align-self: flex-end;
-justify-content: b;}
+justify-content: left;
+}
 
-div {align-self:flex-end;}
+
+div {align-self:flex-end;
+}
+
+p {font-size: 0.5rem;
+align-items:flex-end;
+align-items: left
+;}
+p {font-size: 0.5rem;}
