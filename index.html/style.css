@@ -9,7 +9,7 @@
     font-weight: 400;
     font-style: normal;
     /* color: #e5e5cb; */
-    color: #fa8518;
+    color: #d57419f1;
     font-size: 3rem;}
 
     h1 {font: jersey 10;
@@ -17,14 +17,8 @@
         font-weight: 400;
         font-style: normal; 
         justify-content: center;
+        align-items: center;
   }
-
- 
-
-
-div {align-self:flex-end;
-}
-
 
 
 p {
@@ -32,14 +26,15 @@ p {
 }
 
 p {font-size: 1rem;}
+p1 {font-size: 1rem;}
 
 h1 {
     width: 900px; 
 height:  200px; 
 min-width: 700px;
 border-radius: 19px; 
-color: #E2A938;
-border: 2px #E2A938 solid
+color: #e69c09;
+border: 2px #b37e15 solid
 } 
 
 body {
@@ -51,10 +46,13 @@ h2 {font: jersey 10;
     font-weight: 400;
     font-style: normal; 
     justify-content: center;
+
     width: 900px; 
     max-height: 100px; 
-    min-width: 200px;
+    min-width: 800px;
     border-radius: 19px; 
-    color: #E2A938;
-    border: 2px #E2A938 solid
+    color: #e29a0a;
+    border: 2px #b6831d solid;
+    font-size: 5rem;
+    align-content: center;
 }
