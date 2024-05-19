@@ -2,6 +2,15 @@ const playPauseButton = document.querySelector("#play-pause-btn");
 // Event listener to toggle between playing and pausing video on clicking the button
 playPauseButton.addEventListener("click", togglePlay);
 const playPauseImg = document.querySelector("#play-pause-img");
+playPauseButton.addEventListener("click", playPauseVideo);
+
+function playPauseVideo()
+if (myVideo.paused || myVideo.ended) {
+    myVideo.play();
+} else {
+    playPauseImg.src
+    myVideo.pause();
+}
 
 const muteUnmuteButton = document.querySelector("#mute-unmute-btn");
 // Event listener to mute or unmute audio on clicking the button

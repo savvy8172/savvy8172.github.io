@@ -3,53 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A2</title>
+    <title>Document</title>
     <!-- add the font family of your choice -->
-   
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <!-- Header Section -->
     <header>
-      <h1>MUSIC VIDEO!</h1>
+      <h1>Audio Player</h1>
+      
     </header>
-    <img= src="camo.jpeg"
-    height="1000"
-    width="1000"
-    >
-    <div class="outer">
-        <main class="container">
-            <!-- Media Player Section -->
-            <div class="media-player">
-              <video id="custom-video-player" controls>
-                <source
-                  src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
-                  type="video/mp4"
-                  height="400"
-                  width="600"
-                />
-              </video>
-      
-        <!-- We divide the content of the box into three sections
-        1. video-container = it contains the videoplayer as well as playlist
-        2. video-title = it contains meta information about video currently being played
-        3. video-controls = it gives options for users to control the video such as 
-           play, pause, make it fullscreen etc.  -->
-        <section class="video-container">
-          <!-- we further divide video-container into two sections
-          1. video player
-         .  -->
-         
-      
+
+    <!-- Navigation Section -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Music</a></li>
+        <!-- Add or remove navigation items as needed -->
+      </ul>
+    </nav>
+
     <!-- Main Content Section -->
-  
+    <main class="container">
+        <script src="script.js"></script>
+
+      <!-- Media Player Section -->
+     <h1>p-hase_Leapt.mp3</h1>
+    <audio src="p-hase_Leapt.mp3" controls id="airport-audio"> </audio>
+    
+        <div class="custom-controls">
+          <button id="play-pause-btn" onclick="togglePlayPause()">
+            <img
+              id="play-pause-img"
+              src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
+              alt="Play Button"
+              width="24"
+              height="24">
+
+            />
+          
+          <!-- add the missing buttons or functionality here -->
+          <div class="progress-bar">
+            <span id="progress-bar-fill"></span>
+          </div>
+        </div>
+      </div>
+x
       <!-- Additional Content Section -->
       <section>
         <h2>Additional Content</h2>
-        <p>This is where you can showcase any other relevant content.</p>
-        <!-- Add more content as needed -->
+        <p>miac.mp4 produces a stylised audiovisual display. Using sound to match the video, the creator used purple colours and a vaporwave aesthetic to create the mp4. </p>
+        <!-- Breif text on the video. -->
       </section>
     </main>
 
