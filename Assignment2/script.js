@@ -79,7 +79,7 @@ increaseVolumeButton.addEventListener("click", increaseVolume);
 function updateVolume() {
   const volume = video.volume;
   console.log("Volume changed:", volume);
-}
+}x
 function increaseVolume() {
   if (video.volume < 0.9) {
     video.volume += 0.1;
