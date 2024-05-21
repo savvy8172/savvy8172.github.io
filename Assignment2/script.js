@@ -41,52 +41,64 @@ function toggleSound() {
       video.muted = true;
   }
 }
-const increaseVolumeButton = document.querySelector("#increase-volume-btn");
-// Event listener to increase volume on clicking the button
-increaseVolumeButton.addEventListener("click", increaseVolume);
-
-const decreaseVolumeButton = document.querySelector("#decrease-volume-btn");
-// Event listener to decrease volume on clicking the button
-decreaseVolumeButton.addEventListener("click", decreaseVolume);
 
 const loopButton = document.querySelector("#loop-btn");
-// Event listener to loop or replay the video on clicking the button
+console.log(loopButton);
+
+const loopImg = document.querySelector('loop-img');
+console.log(loopImg);
+
 loopButton.addEventListener("click", loopVideo);
+// looping video option !
+function loopVideo() {
+  if (video.looped) {
+    video.currentTime = 0;
+    video.play();
+  }
+function loopVideo() {
+  if (loop) {
+    loop = false;
+    loopButton.textContent = 'Unloop';
+    loopButton.style.backgroundColor = "#d5cea3";
+  } else {
+    loop = true;
+    loopButton.textContent = 'Loop'
+    loopButton.style.backgroundColor = "#7b775e";
+  }
+  console.log("loop is", loop);
+}
+}
+const increaseVolumeButton = document.querySelector("#increase-volume-btn");
+console.log(increaseVolumeButton);
 
+const increaseVolumeImg = document.querySelector('increase-volume-img')
+console.log (increaseVolumeImg)
 
-  function replay() {
-    console.log("loop is", loop);
-    if (loop) {
-      myVideo.currentTime = 0;
-      myVideo.play();
-    }
+increaseVolumeButton.addEventListener("click", increaseVolume);
+
+function updateVolume() {
+  const volume = video.volume;
+  console.log("Volume changed:", volume);
+}
+function increaseVolume() {
+  if (video.volume < 0.9) {
+    video.volume += 0.1;
   }
-  
-  //this function will set the value of loop to true or false
-  function loopVideo() {
-    if (loop) {
-      loop = false;
-      loopButton.style.backgroundColor = "#d5cea3";
-    } else {
-      loop = true;
-      loopButton.style.backgroundColor = "#7b775e";
-    }
-    console.log("loop is", loop);
-  }
-  function updateVolume() {
-    const volume = myVideo.volume;
-    console.log("Volume changed:", volume);
-  }
-  
-  //volume values range from 0 to 1 with an increment of 0.1
-  function increaseVolume() {
-    if (myVideo.volume < 0.9) {
-      myVideo.volume += 0.1;
-    }
-  }
-  
-  //since you do not want the value to go to negative the check is not at 0 but 0.11
+}
+
+const decreaseVolumeButton = document.querySelector("#decrease-volume-btn");
+console.log(decreaseVolumeButton);
+
+const decreaseVolumeImg = document.querySelector('decrease-volume-img')
+console.log (decreaseVolumeImg)
+
+decreaseVolumeButton.addEventListener("click", decreaseVolume);
+
+function updateVolume() {
+  const volume = video.volume;
+  console.log("Volume changed:", volume);
+}
   function decreaseVolume() {
-    if (myVideo.volume > 0.11) 
-      myVideo.volume -= 0.1;
+    if (video.volume > 0.11) 
+      video.volume -= 0.1;
     }
