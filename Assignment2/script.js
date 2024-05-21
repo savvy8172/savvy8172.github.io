@@ -19,18 +19,26 @@ function updateProgressBar() {
   progressBar.style.width = value + "%";
 }
 
-function toggleMute() {
   const muteUnmuteButton = document.querySelector("#mute-unmute-btn");
-  const muteUnmuteImg = document.querySelector('mute-unmute-img');
+   console.log(muteUnmuteButton);
 
-  if (myVideo.muted) {
-      myVideo.muted = false;
+  const muteUnmuteImg = document.querySelector('mute-unmute-img');
+  console.log(muteUnmuteImg);
+
+muteUnmuteButton.addEventListener('click', toggleSound);
+
+function toggleSound() {
+
+  if (video.muted) {
+      video.muted = false;
       muteUnmuteButton.textContent = 'Mute';
       muteUnmuteButton.style.backgroundColor = "#d5cea3";
+      video.muted = false;
   } else {
-      myVideo.muted = true;
+      video.muted = true;
       muteUnmuteButton.textContent = 'Unmute';
       muteUnmuteButton.style.backgroundColor = "#7b775e";
+      video.muted = true;
   }
 }
 const increaseVolumeButton = document.querySelector("#increase-volume-btn");
@@ -45,9 +53,6 @@ const loopButton = document.querySelector("#loop-btn");
 // Event listener to loop or replay the video on clicking the button
 loopButton.addEventListener("click", loopVideo);
 
-// Adding event listener to the mute button
-  const muteUnmuteButton = document.getElementById('muteUnmuteButton');
-  muteUnmuteButton.addEventListener('click', toggleMute);
 
   function replay() {
     console.log("loop is", loop);
@@ -82,6 +87,6 @@ loopButton.addEventListener("click", loopVideo);
   
   //since you do not want the value to go to negative the check is not at 0 but 0.11
   function decreaseVolume() {
-    if (myVideo.volume > 0.11) {
+    if (myVideo.volume > 0.11) 
       myVideo.volume -= 0.1;
     }

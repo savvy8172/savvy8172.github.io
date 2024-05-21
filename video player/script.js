@@ -16,3 +16,8 @@ if (myVideo.paused || myVideo.ended) {
     playPauseImg.src
     myVideo.pause();
 }
+
+function go Fullscreen () {
+
+    
+}
