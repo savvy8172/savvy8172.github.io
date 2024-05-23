@@ -68,6 +68,24 @@ function loopVideo() {
   console.log("loop is", loop);
 }
 }
+
+const decreaseVolumeButton = document.querySelector("#decrease-volume-btn");
+console.log(decreaseVolumeButton);
+
+const decreaseVolumeImg = document.querySelector('decrease-volume-img')
+console.log (decreaseVolumeImg)
+
+decreaseVolumeButton.addEventListener("click", decreaseVolume);
+
+function updateVolume() {
+  const volume = video.volume;
+  console.log("Volume changed:", volume);
+}
+  function decreaseVolume() {
+    if (video.volume > 0.11) 
+      video.volume -= 0.1;
+    }
+
 const increaseVolumeButton = document.querySelector("#increase-volume-btn");
 console.log(increaseVolumeButton);
 
@@ -86,19 +104,4 @@ function increaseVolume() {
   }
 }
 
-const decreaseVolumeButton = document.querySelector("#decrease-volume-btn");
-console.log(decreaseVolumeButton);
 
-const decreaseVolumeImg = document.querySelector('decrease-volume-img')
-console.log (decreaseVolumeImg)
-
-decreaseVolumeButton.addEventListener("click", decreaseVolume);
-
-function updateVolume() {
-  const volume = video.volume;
-  console.log("Volume changed:", volume);
-}
-  function decreaseVolume() {
-    if (video.volume > 0.11) 
-      video.volume -= 0.1;
-    }
